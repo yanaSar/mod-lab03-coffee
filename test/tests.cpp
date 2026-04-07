@@ -139,9 +139,3 @@ TEST(AutomataTest, CannotChooseWhenOff) {
     vm.choice(1);
     EXPECT_EQ(vm.getState(), STATES::OFF);
 }
-
-// Функция main - ОБЯЗАТЕЛЬНА!
-int main(int argc, char **argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

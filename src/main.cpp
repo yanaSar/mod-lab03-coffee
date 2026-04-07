@@ -1,3 +1,5 @@
+// Copyright 2022 GHA Test Team
+
 #include "../include/Automata.h"
 #include <iostream>
 using namespace std;

@@ -1,5 +1,7 @@
-#ifndef AUTOMATA_H
-#define AUTOMAT
+// Copyright 2022 GHA Test Team
+
+#ifndef INCLUDE_AUTOMATA_H
+#define INCLUDE_AUTOMAT
 
 #include <string>
 
@@ -14,26 +16,25 @@ enum class STATES {
 };
 
 class Automata {
-private:
-    double cash;
-    std::string menu[MAX_MENU_SIZE];
-    double prices[MAX_MENU_SIZE];
-    int menuSize;
-    STATES state;
-    int selectedDrinkIndex;
-
-public:
-    Automata();
-    void on();
-    void off();
-    void coin(double amount);
-    void getMenu();
-    STATES getState();
-    void choice(int drinkIndex);
-    bool check();
-    void cancel();
-    void cook();
-    void finish();
-};
+    private:
+        double cash;
+        std::string menu[MAX_MENU_SIZE];
+        double prices[MAX_MENU_SIZE];
+        int menuSize;
+        STATES state;
+        int selectedDrinkIndex;
+    public:
+        Automata();
+        void on();
+        void off();
+        void coin(double amount);
+        void getMenu();
+        STATES getState();
+        void choice(int drinkIndex);
+        bool check();
+        void cancel();
+        void cook();
+        void finish();
+    };
 
 #endif
