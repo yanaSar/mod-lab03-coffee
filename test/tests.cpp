@@ -109,17 +109,17 @@ TEST(AutomataTest, PurchaseWithExactAmount) {
 TEST(AutomataTest, DifferentDrinksPurchase) {
     Automata vm;
     vm.on();
-    
+
     // Покупаем чай
     vm.coin(30.0);
     vm.choice(2);  // Tea = 30 руб.
     EXPECT_EQ(vm.getState(), STATES::WAIT);
-    
+
     // Покупаем горячий шоколад
     vm.coin(60.0);
     vm.choice(3);  // Hot Chocolate = 60 руб.
     EXPECT_EQ(vm.getState(), STATES::WAIT);
-    
+
     // Покупаем эспрессо
     vm.coin(55.0);
     vm.choice(5);  // Espresso = 55 руб.

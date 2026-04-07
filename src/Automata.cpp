@@ -1,11 +1,11 @@
 // Copyright 2022 GHA Test Team
 
 #include <iostream>
-#include "../include/Automata.h"
 #include <fstream>
 #include <string>
 #include <iomanip>
 #include <cstdlib>
+#include "../include/Automata.h"
 
 Automata::Automata() : cash(0), state(STATES::OFF), selectedDrinkIndex(-1),
 menuSize(6) {
